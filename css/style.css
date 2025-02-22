@@ -1,0 +1,137 @@
+/* 导航栏 */
+/* 
+    flex布局 居中
+    图片 链接
+*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.site-wrap{
+    margin:auto;
+}
+.site-navbar{
+    position: fixed;
+    top:0;
+    background-color:rgb(236, 247, 247);
+    width: 100%;
+    padding-left: 10px;
+    z-index: 2;
+}
+.site-navigation{
+    /* margin-left:20px; */
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 0; */
+}
+
+.site-navigation a{
+    text-decoration: none;
+}
+/* four status */
+.site-navigation a:link{
+    text-decoration: none;
+}
+.site-navigation a:hover{
+    text-decoration: none;
+}
+.site-navigation a:visited{
+    text-decoration: none;
+}
+.site-navigation a:active{
+    text-decoration: none;
+}
+.site-menu{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0; /* 控制menu与ICME的间隔 */
+}
+.site-menu li{
+    list-style-type: none;
+    margin-right: 10px;
+    padding:5px 5px;
+}
+.site-menu li a{
+    font-size: 20px;
+    text-decoration: none;
+    /* margin: 10% 10%; */
+    top:10%;
+    left:15px;
+}
+/* 图片 */
+.workshop{
+    height: 468px;
+    width: 100%;
+    position: absolute;
+    top:72px;
+    z-index: 1;
+    background-image: url(../image/workshop.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+/* .workshop img{
+    width: 1440px;
+    height: auto;
+} */
+
+/* 主体 */
+/* 
+    flex布局 分为下面两类
+    注意屏幕自适应
+*/
+.main{
+    display: flex;
+    position: absolute;
+    top:565px;
+}
+    /* left */
+        /* 组织者 */
+.left{
+    margin-left: 30px;
+}
+.Organizing-Co-chairs{
+    width:350px;
+}
+.leftContainer{
+    padding: 0;
+    padding-right: 80px;
+    margin-top: 5px;
+}
+
+.leftContainer li{
+    list-style-type: none;
+    /* padding: 0; */
+}
+
+.Technical-Program-Commitee{
+    margin-top: 35px;
+}
+    /* right */
+        /* workshop */
+
+.right{
+    margin-top: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+.Introduction p{
+    margin-block-start:0;
+    line-height: 1.5;
+}
+.duration{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.Subject-areas ul li{
+    list-style-type:decimal
+}
+.paper-Submission p a{
+    color:skyblue;
+}
+
+
