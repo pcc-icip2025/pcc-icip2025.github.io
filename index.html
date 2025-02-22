@@ -7,284 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="image/favicon.ico">
-    <title>Immersive Media Compression</title>
+    <title>Point Cloud Compression</title>
 </head>
 
 <body>
-
     <!-- 导航栏 -->
     <div class="site-wrap">
         <div class="site-navbar">
             <nav class="site-navigation">
-                <a href="https://www.2023.ieeeicme.org" width="50px">
-                    <h1>ICME 2023</h1>
+                <a href="https://pcc-icip2025.github.io" width="50px">
+                    <h1>ICIP 2025</h1>
                 </a>
                 <ul class="site-menu">
-
                     <li>
                         <a href="index.html">HOME</a>
                     </li>
                     <li>
-                        <a href="index.html#subject areas">SUBJECT AREAS</a>
-                    </li>
-                    <li>
-                        <a href="index.html#important dates">IMPORTANT DATES</a>
-                    </li>
-                    <li>
                         <a href="index.html#organizing Co-chairs">ORGANIZING CO-CHAIRS</a>
-                    </li>
-                    <li>
-                        <a href="index.html#paper submission">PAPER SUBMISSION</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="workshop">
-            <!-- <img src="image/workshop.jpg" id="workShopImage" </img> -->
-            
+            <img src="./images/2.jpg" alt="workshop image">
         </div>
     </div>
 
-
-
     <div class="main">
-        <!-- top -->
         <div class="left">
-            <!-- left-top -->
             <div class="Organizing-Co-chairs">
                 <span class="lefthead" id="organizing Co-chairs" style="font-size: 18px;"><strong>Organizing Co-chairs</strong></span>
                 <ul class="leftContainer">
                     <li><span class="name-organization">
-                            <strong>Zhan Ma</strong>, Nanjing Univesity, China
+                            <strong>Zhan Ma</strong>, Nanjing University, China (mazhan@nju.edu.cn)
                         </span></li>
                     <li><span class="name-organization">
-                            <strong>Giuseppe Valenzise</strong>, CNRS, France
+                            <strong>Dandan Ding</strong>, Hangzhou Normal University, China (DandanDing@hznu.edu.cn)
                         </span></li>
                     <li><span class="name-organization">
-                            <strong>Dandan Ding</strong>, Hangzhou Normal University, China
+                            <strong>Zhu Li</strong>, University of Missouri, US (zhu.li@ieee.org)
                         </span></li>
-                    <li><span class="name-organization">
-                            <strong>Faranak Tohidi</strong>, Charles Sturt University, Australia
-                        </span></li>
-                    <li><span class="name-organization">
-                            <strong>Pan Gao</strong>, Nanjing University of Aeronautics and Astronautics, China
-                        </span></li>
-                    <li><span class="name-organization">
-                            <strong>Danillo Graziosi</strong>, Sony, US
-                        </span></li>
-                </ul>
-            </div>
-            <!-- left-down -->
-            <div class="Technical-Program-Commitee">
-                <span class="lefthead"><strong style="font-size: 18px;">Technical Program Commitee</strong></span>
-                <ul class="leftContainer">
-                    <li><span class="name-organization">
-                            <strong>Dong Tian</strong>, InterDigital, USA
-                        </span></li>
-                    <li><span class="name-organization">
-                            <strong>Fernando Pereira</strong>, Instituto Superior Técnico, Portugal
-                        </span></li>
-                    <li><span class="name-organization"><strong>Marco Carli</strong>, Roma Tre University, Italy</span>
-                    </li>
-                    <li><span class="name-organization"><strong>Patrick le Callet</strong>, University of Nantes,
-                            France</span></li>
-                    <li><span class="name-organization"><strong>Simone Milani</strong>, University of Padova,
-                            Italy</span>
-                    </li>
-                    <li><span class="name-organization"><strong>Wei Hu</strong>, Peking University, China</span></li>
-                    <li><span class="name-organization"><strong>Federica Battisti</strong>, University of Padova,
-                            Italy</span></li>
-                    <li><span class="name-organization"><strong>Jean-Eudes Marvie</strong>, InterDigital, France</span>
-                    </li>
-                    <li><span class="name-organization"><strong>Lu Zhang</strong>, INSA Rennes, France</span></li>
-                    <li><span class="name-organization"><strong>Zhu Li</strong>, University of Missouri-Kansas City,
-                            USA</span></li>
-                    <li><span class="name-organization"><strong>Emin Zerman</strong>, Mid Sweden University,
-                            Sweden</span>
-                    </li>
-                    <li><span class="name-organization"><strong>Laura Toni</strong>,UCL,UK</span></li>
-                    <li><span class="name-organization"><strong>Mylène Farias</strong>,University of Brasilia,
-                            Brasil</span>
-                    </li>
-                    <li><span class="name-organization"><strong>Mohammad Zavid Parvez</strong>,Australian Catholic
-                            University, Australia</span></li>
-                    <li><span class="name-organization"><strong>Ashek Ahmmed</strong>, Charles Sturt University,
-                            Australia</span></li>
-                    <li><span class="name-organization"><strong>Subrata Chakraborty</strong>,University of New
-                            England</span></li>
-                    <li><span class="name-organization"><strong>Motiur Rahaman</strong>, Charles Sturt University,
-                            Australia</span></li>
-                    <li><span class="name-organization"><strong>Hui Yuan</strong>, Shandong University, China</span>
-                    </li>
-                    <li><span class="name-organization"><strong>Wei Gao</strong>, Peking University, China</span></li>
-                    <li><span class="name-organization"><strong>Zhengwei Wang</strong>, ByteDance AI Lab, China</span>
-                    </li>
                 </ul>
             </div>
         </div>
         <div class="right">
-            <!-- right-top -->
             <div class="Introduction">
                 <p class="article">
-                    The use of immersive media (e.g., point clouds, light fields, meshes, etc) enables mixing the
-                    physical and virtual world to create an unprecedented experience for applications like AR/VR
-                    (augmented/virtual reality), Digital Twin and the Metaverse. To make these applications feasible
-                    over current and future communication networks and maximize user experience, efficient
-                    compression of immersive media is essential. In addition to traditional rules-based compression
-                    methods explored in the past decades, in recent years deep learning has been applied to
-                    multimedia coding, yielding impressive coding gains in some cases. Furthermore, international
-                    standardization organizations like MPEG and JPEG are actively pushing the standardization of
-                    novel coding solutions for immersive content. Without doubt, this will be the future frontier for
-                    new media systems and services. However, technological barriers and challenges need to be
-                    overcome in developing the best solutions and standards.
+                    Recent advances in sensor technologies and algorithms, e.g., LiDAR and radar systems and ultra-high resolution 
+                    camera arrays, have facilitated point cloud acquisition and processing in vast applications like autonomous 
+                    machinery and immersive communication. Given that point cloud data often present an excessive amount of random, 
+                    unstructured points in a 3D space, efficient compression of the point cloud is highly desired for its successful 
+                    service enabling, especially for networked applications. In this workshop, we will review the latest advances in 
+                    point cloud compression, including coding tool development, (in loop or post) processing filters, quality 
+                    assessment, as well as standardization progress.
                 </p>
-                <p class="article">
-                    This ICME workshop on Immersive Media Compression aims at bringing forward recent advances
-                    related to compression technologies for light fields, point clouds, meshes, etc. The goal is to
-                    gather
-                    researchers with diverse and interdisciplinary backgrounds to cover a variety of aspects related to
-                    compression (e.g., acquisition, processing, quality measurement, optimization, etc.), to efficiently
-                    develop Immersive Media Compression systems and technologies.
-                </p>
-            </div>
-
-             <div class="News">
-                <span class="title" id="news"><strong>News</strong></span>
-                 <p>
-                 <strong style="color:red;">The slides of the keynote talks are now available!</strong>
-                 </p>
-                 <ul>
-                        <li> <a href="https://1drv.ms/b/s!Atf-G8xC1YkhjQR_Wi2OjJDM2ZlQ?e=bTWLz1">Learning Technologies for Immersive Media: An Introduction on Point Cloud Learning and Compression (Dong Tian, InterDigital, US) </a> </li>
-                        <li> <a href="https://1drv.ms/b/s!Atf-G8xC1YkhjQUU-pRKxnVeJZKA?e=EdBOby">Learning-based Point Cloud Compression in JPEG (Stuart Perry, UTS, Australia)</a></li>
-                 </ul>
-                 <ul>
-                     <li> The date of the workshop is confirmed to be <strong style="color:red;">July 10</strong></li>
-
-                     <li>Confirmed keynotes:</li>
-                    <ul>
-                        <li> Dong Tian (InterDigital, US): "Learning Technologies for Immersive Media" </li>
-                        <li> Stuart Perry (University of Technology of Sydney): "Learning-based Point Cloud Compression in JPEG"</li>
-                    </ul>
-                     
-
-                    <li>We implement a <strong style="color:red;">fast track procedure</strong> for papers rejected by the ICME main conference and demonstrating an acceptable quality.</li>
-                    <ul>
-                        <li> Authors will be requested to provide, in addition to the paper, a letter with responses to the reviewers' comments. </li>
-                        <li> Decision could be made by the chairs without additional reviews. </li>
-                    </ul>
-                </ul>
-            </div>
-            
-            <div class="Program">
-                <span class="title" id="program"><strong style="color:red">Program</strong></span></br>
-                <span style="display:block;text-indent:2em;"><strong style="color:red">Room: P1</strong></span>
-                <table class="program" >
-                    <tr>
-                        <td align="right" width="100px">8:30 – 8:35: </td>
-                        <td>WELCOME AND INTRODUCTION</td>
-                    </tr>
-                    <tr>
-                        <td align="right">8:35 – 9:20: </td>
-                        <td>KEYNOTE 1 – Dong Tian (InterDigital, US): "<strong>Learning Technologies for Immersive Media</strong>"</td>
-                    </tr>
-                    <tr>
-                        <td align="right">9:20 – 10:00: </td>
-                        <td>SESSION 1: 3D MESHES</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>9:20 – <strong>Texture coordinate prediction using structural information for MPEG V-DMC</strong>, Wenjie Zou, FuZheng Yang (Xidian University)</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>9:40 – <strong>DMVC: Deep Mesh Vertex Compression</strong>, Xinyao Zeng, Xudong Zhao, Linyao Gao, Yiling Xu, Yunfeng Guan (Shanghai Jiao Tong University)</td>
-                    </tr>
-                    <tr>
-                        <td align="right">10:00 – 10:30: </td>
-                        <td>Coffee break</td>
-                    </tr>
-                    <tr>
-                        <td align="right">10:30 – 11:50: </td>
-                        <td>SESSION 2: IMAGE-BASED FORMATS AND PROCESSING</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>10:30 – <strong>Disentangled Feature Distillation for Light Field Super-Resolution with Degradations</strong>, Linjie Zhou (Peking University), Wei Gao (SECE, Shenzhen Graduate School, Peking University), Ge Li (Peking University), Hui Yuan (School of Control Science and Engineering, Shandong University), Tiesong Zhao (Fuzhou University), Guanghui Yue (Shenzhen university)</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>10:50 – <strong>FBRA360:  A Fuzzy-based bitrate adaptation scheme for 360° video streaming</strong>, Si-Ze Qian, Yuan Zhang, Tao Lin (Communication University of China)</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>11:10 – <strong>K3BO: Keypoint-Based Bounding Box Optimization for Radiance Field Reconstruction from Multi-View Images</strong>, Joshua Maraval, Nicolas RAMIN (b<>com), Lu Zhang (INSA Rennes)</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>11:30 – <strong>Learn how to prune pixels for multi-view neural image-based synthesis</strong>, Marta Milovanovic, Enzo Tartaglione (Télécom Paris - Institut Polytechnique de Paris), Marco Cagnazzo (University of Padova), Félix Henry (Orange Labs)</td>
-                    </tr>
-                    <tr>
-                        <td align="right">11:50 – 13:15: </td>
-                        <td>Lunch</td>
-                    </tr>
-                    <tr>
-                        <td align="right">13:15 – 14:00: </td>
-                        <td>KEYNOTE 2 – Stuart Perry (University of Technology of Sydney): "<strong>Learning-based Point Cloud Compression in JPEG</strong>"</td>
-                    </tr>
-                    <tr>
-                        <td align="right">14:00 – 15:00: </td>
-                        <td>SESSION 3: POINT CLOUDS</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>14:00 – <strong>Video-Based Point Cloud Compression Using Density-Based Variable Size Hexahedrons</strong>, Faranak Tohidi, Manoranjan Paul (Charles Sturt University, Australia)</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>14:20 – <strong>Normal-based Global Motion Estimation for LiDAR Point Cloud Lossless Geometry Compression</strong>, Wenhua Lou, Shuai, Lei Wei (Northwestern Polytechnical University), FuZheng Yang (Xidian University)</td>
-                    </tr>
-                    <tr>
-                        <td align="right"></td>
-                        <td>14:40 – <strong>Exploiting Inductive Bias in Transformer for Point Cloud Classification and Segmentation</strong>, Zihao Li, Pan Gao (Nanjing University of Aeronautics and Astronautics), Hui Yuan (School of Control Science and Engineering, Shandong University), Ran Wei (Science and Technology on Electro-optic Control Laboratory), Manoranjan Paul (Charles Sturt University, Australia)</td>
-                    </tr>
-                    
-                </table>
-            </div>
-
-            <div class="Subject-areas">
-                <span class="title" id="subject areas"><strong>Subject areas</strong></span>
-                <ul>
-                    <li class="areas"><span>Immersive video coding (omnidirectional, light fields, point clouds/meshes, etc.)</span></li>
-                    <li class="areas"><span>Immersive video processing and enhancement</span></li>
-                    <li class="areas"><span>Immersive multimedia (audio visual and multimodal)</span></li>
-                    <li class="areas"><span>Quality of Experience for Immersive multimedia</span></li>
-                    <li class="areas"><span>Streaming and networked solutions for Immersive multimedia</span></li>
-                </ul>
-            </div>
-            <div class="Important-Dates">
-                <span class="title" id="important dates"><strong>Important dates</strong></span>
-                <ul>
-                    <li class="date"><span>Submission deadline: <del><strong style="color:red;">March 23</strong></del> <del><strong style="color:red;">April 1</strong></del>;</span></li>
-                    <li class="date"><span>Review submission deadline: <del> <strong style="color:red;">April 18</strong></del>;</span></li>
-                    <li class="date"><span>Author notification: <del><strong style="color:red;">April 24</strong></del>;</span></li>
-                    <li class="date"><span>Camera-ready: <del><strong style="color: red;">May 1st</strong></del>;</span></li>
-                </ul>
             </div>
 
             <div class="duration">
-                <span class="title"><strong>Duration of the workshop: Full day</strong> </span>
-            </div>
-
-            
-            <div class="paper-Submission">
-                <span class="title" id="paper submission"><strong>Paper Submission</strong></span>
-                <p>
-                    Full-length papers of 6 pages in length reporting on original research are solicited.
-                    The reviewing is double blind and the paper submission link is:
-                    <a
-                        href="https://cmt3.research.microsoft.com/ICMEW2023">https://cmt3.research.microsoft.com/ICMEW2023</a>.
-                    For detailed instructions, see <a href="http://2023.ieeeicme.org/">http://2023.ieeeicme.org/</a>.
-                </p>
+                <span class="title"><strong>Duration of the workshop: Half-Day Workshop (3 hours)</strong></span>
             </div>
         </div>
     </div>
