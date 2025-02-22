@@ -171,4 +171,22 @@ body{
     line-height: 1.5;
 }
 
+.important-dates .deadline {
+    color: #FF0000;
+}
+
+.detailed-instruction {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.detailed-instruction a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.detailed-instruction a:hover {
+    text-decoration: underline;
+}
+
 
