@@ -1,5 +1,5 @@
 /* 导航栏 */
-/* 1
+/* 
     flex布局 居中
     图片 链接
 */
@@ -133,10 +133,15 @@ body{
     margin-right: 30px;
     flex: 1;            /* 右侧自适应宽度 */
 }
-.Introduction p{
-    margin-block-start:0;
+.Introduction h3 {
+    margin-bottom: 15px;
+}
+
+.Introduction p {
+    margin-block-start: 0;
     line-height: 1.5;
 }
+
 .duration{
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -146,6 +151,24 @@ body{
 }
 .paper-Submission p a{
     color:skyblue;
+}
+
+.important-dates {
+    margin-top: 20px;
+}
+
+.important-dates h3 {
+    margin-bottom: 15px;
+}
+
+.important-dates ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.important-dates ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 
