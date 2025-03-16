@@ -9,16 +9,20 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.site-wrap{
-    margin:auto;
+.site-wrap {
+    margin: auto;
+    max-width: 1400px;  /* 新增：限制最大宽度 */
+    padding: 0 20px;    /* 新增：两侧留白 */
 }
-.site-navbar{
+.site-navbar {
     position: fixed;
-    top:0;
-    background-color:rgb(236, 247, 247);
+    top: 0;
+    background-color: rgb(236, 247, 247);
     width: 100%;
     padding-left: 10px;
     z-index: 2;
+    left: 50%;          /* 新增：配合transform实现居中 */
+    transform: translateX(-50%);
 }
 .site-navigation{
     /* margin-left:20px; */
@@ -62,13 +66,16 @@ body{
     top:10%;
     left:15px;
 }
-/* 图片 */
+/* 图片容器 */
 .workshop {
     height: 468px;
     width: 100%;
     margin-top: 72px;
     position: relative;
     z-index: 1;
+    max-width: 1400px; /* 新增：保持与header一致 */
+    margin-left: auto; /* 新增：配合右侧auto实现居中 */
+    margin-right: auto;
 }
 
 .workshop h2 {
@@ -95,17 +102,19 @@ body{
     flex布局 分为下面两类
     注意屏幕自适应
 */
-.main{
+.main {
     display: flex;
-    position: relative;  /* 改为relative定位 */
-    margin-top: 25px;   /* 添加上边距 */
-    clear: both; /* 确保不会被上面的内容影响 */
+    position: relative;
+    margin: 25px auto 0; /* 修改为auto实现居中 */
+    clear: both;
+    max-width: 1200px;  /* 新增：限制主体最大宽度 */
+    padding: 0 20px;    /* 新增：两侧留白 */
 }
-    /* left */
-        /* 组织者 */
-.left{
+
+.left {
     margin-left: 30px;
-    flex: 0 0 350px;    /* 固定左侧宽度 */
+    flex: 0 0 350px;
+    max-width: 350px;   /* 新增：防止过度拉伸 */
 }
 .Organizing-Co-chairs{
     width:350px;
@@ -127,11 +136,13 @@ body{
     /* right */
         /* workshop */
 
-.right{
+/* 右侧 */
+.right {
     margin-top: 0;
     padding: 0;
     margin-right: 30px;
-    flex: 1;            /* 右侧自适应宽度 */
+    flex: 1;
+    max-width: 900px;  /* 新增：最佳可读宽度 */
 }
 .Introduction h3 {
     margin-bottom: 15px;
@@ -189,4 +200,28 @@ body{
     text-decoration: underline;
 }
 
+/* 移动端适配调整 */
+@media (max-width: 1200px) {
+    .site-navbar {
+        padding-left: 5px; /* 小屏幕减少留白 */
+    }
+    
+    .main {
+        padding: 0 15px;
+    }
+}
 
+@media (max-width: 768px) {
+    .left, .right {
+        margin: 0 15px;  /* 移动端增加边距 */
+        max-width: 100%; /* 确保充满屏幕 */
+    }
+    
+    .left {
+        flex-basis: auto; /* 移动端取消固定宽度 */
+    }
+    
+    .workshop {
+        height: 300px;  /* 移动端降低图片高度 */
+    }
+}
